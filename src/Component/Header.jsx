@@ -7,10 +7,10 @@ const Header = ({onSearch, onHome}) => {
       return (
         <div className="p-4 bg-black flex items-center justify-between">
           <div className="flex items-center space-x-4">
-            <h1 onClick={setMvSearch([])} className="text-[40px] uppercase font-bold text-red-500"
+            <h1 onClick={() => onHome([])} className="text-[40px] uppercase font-bold text-red-500"
             >Movie</h1>
             <nav className="flex items-center space-x-4">
-              <a className="text-white hover:text-red-500 transition duration-300" href="#">Home</a>
+              <a onClick={() => onHome([])} className="text-white hover:text-red-500 transition duration-300" href="#">Home</a>
               <a className="text-white hover:text-red-500 transition duration-300" href="#">About</a>
               <a className="text-white hover:text-red-500 transition duration-300" href="#">Contact</a>
             </nav>
